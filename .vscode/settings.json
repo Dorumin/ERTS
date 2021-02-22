@@ -5,6 +5,10 @@
     "typescript.format.enable": false,
     */
 
+    "files.associations": {
+        "babel.config.json": "jsonc"
+    },
+
     "files.exclude": {
         "output/": true,
         "node_modules/": true
