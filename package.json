@@ -15,6 +15,7 @@
         "express": "^4.17.1"
     },
     "devDependencies": {
+        "@babel/core": "^7.12.17",
         "@babel/preset-env": "^7.12.17",
         "@babel/preset-react": "^7.12.13",
         "@babel/preset-typescript": "^7.12.17",
@@ -29,6 +30,7 @@
         "css-loader": "^4.2.0",
         "electron": "^11.3.0",
         "electron-connect": "^0.6.3",
+        "electron-devtools-installer": "^3.1.1",
         "electron-packager": "^15.2.0",
         "electron-reload-webpack-plugin": "^2.0.4",
         "postcss-loader": "^3.0.0",

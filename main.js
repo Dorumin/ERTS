@@ -8,7 +8,23 @@ const DEV = process.env.NODE_ENV === 'development';
 
 let mainWindow;
 
-const createWindow = () => {
+const createWindow = async () => {
+    if (DEV) {
+        const installer = require('electron-devtools-installer');
+        const forceDownload = !!process.env.UPGRADE_EXTENSIONS;
+        const extensions = [
+            'REACT_DEVELOPER_TOOLS',
+            'REDUX_DEVTOOLS'
+        ];
+
+        await installer
+            .default(
+                extensions.map((name) => installer[name]),
+                forceDownload
+            )
+            .catch(console.log);
+    }
+
     mainWindow = new BrowserWindow({
         height: 800,
         width: 1200,
