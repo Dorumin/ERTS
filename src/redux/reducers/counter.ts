@@ -11,7 +11,7 @@ export default function(state = initialState, action: CounterActions): CounterSt
         case DECREMENT_COUNTER:
             return state - 1;
         case RESET_COUNTER:
-            return 0;
+            return initialState;
         default:
             return state;
     }
