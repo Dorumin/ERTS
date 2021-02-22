@@ -1,0 +1,19 @@
+# Generated output files
+node_modules/
+output/
+exports/
+releases/
+
+# Incompatible lockfiles
+package-lock.json
+
+# Problematic MacOS files
+*/.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
