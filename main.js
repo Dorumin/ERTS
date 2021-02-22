@@ -32,7 +32,8 @@ const createWindow = async () => {
         frame: true,
         webPreferences: {
             nodeIntegration: true,
-            enableRemoteModule: true
+            enableRemoteModule: true,
+            contextIsolation: true
         }
     });
     mainWindow.maximize();
