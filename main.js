@@ -1,5 +1,4 @@
 const { app, BrowserWindow } = require('electron');
-const { client } = require('electron-connect');
 
 const url = require('url');
 const path = require('path');
@@ -40,6 +39,7 @@ const createWindow = () => {
     }
 
     if (DEV) {
+        const { client } = require('electron-connect');
         client.create(mainWindow);
     }
 

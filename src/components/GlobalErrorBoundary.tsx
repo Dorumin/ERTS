@@ -27,9 +27,6 @@ export default class GlobalErrorBoundary extends React.Component<GlobalErrorBoun
     }
 
     componentDidCatch(error: any, errorInfo: any) {
-        console.dir(error);
-        console.dir(errorInfo);
-
         this.setState({
             error,
             errorInfo
