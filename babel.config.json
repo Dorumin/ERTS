@@ -1,6 +1,9 @@
 {
     "presets": [
-        "@babel/preset-react",
+        ["@babel/preset-react", {
+            // New JSX transform
+            "runtime": "automatic"
+        }],
         "@babel/preset-typescript"
     ]
 }

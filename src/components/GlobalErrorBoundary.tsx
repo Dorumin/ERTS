@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 
 type GlobalErrorBoundaryProps = {
     children: React.ReactChild;
@@ -10,7 +10,7 @@ type GlobalErrorBoundaryState = {
     errorInfo: any;
 }
 
-export default class GlobalErrorBoundary extends React.Component<GlobalErrorBoundaryProps, GlobalErrorBoundaryState> {
+export default class GlobalErrorBoundary extends Component<GlobalErrorBoundaryProps, GlobalErrorBoundaryState> {
     constructor(props: GlobalErrorBoundaryProps) {
         super(props);
         this.state = {
