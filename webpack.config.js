@@ -44,5 +44,13 @@ module.exports = {
             '.js'
         ],
     },
+    // Persistent cache
+    cache: {
+        type: 'filesystem',
+        buildDependencies: {
+            // Invalidate cache when webpack.config.js is changed
+            config: [__filename],
+        },
+    },
     devtool: 'source-map'
 };
