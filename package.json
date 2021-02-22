@@ -8,7 +8,7 @@
         "serve": "node server/index.js",
         "build": "webpack --mode production",
         "watch": "webpack --watch --mode development",
-        "dev": "concurrently \"npm:serve\" \"npm:watch\"",
+        "dev": "cross-env NODE_ENV=development concurrently \"npm:serve\" \"npm:watch\"",
         "package-win": "electron-packager . --prune --overwrite --platform=win32 --arch=ia32 --icon=public/assets/icon.ico  --out=releases"
     },
     "dependencies": {
